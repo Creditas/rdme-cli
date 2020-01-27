@@ -1,16 +1,13 @@
 language: python
-
 python:
- - "3.6"
-
+- '3.6'
 install: pip install -e .
-
 script:
-  - pip install -r requirements.txt
-
+- pip install -r requirements.txt
 deploy:
   provider: pypi
-  user: "__token__"
-  password: "pypi-AgEIcHlwaS5vcmcCJDUxN2U2Mjg1LTQwNTYtNGFkMy04ZTA2LWNkMjllMDYwNjgxZgACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgOMSVGCUSp_lfobjG-HchTk9-9R_U-QAZ9tm0pT99W38"
+  user: __token__
+  password:
+    secure: yi5cKqdE6/3K8IUWZLwRC/yP2wIs08ROu0P2NJmaxe+VUb+B5ng6l+L7Rv4uIh6sY4h6C4IiPJYTzqfLRGmecC9bVpwWFEwocHYqxWafetBVvbsr+LACdRUfMJ8m/WxJ9ZiGieeBNr/OTgLEx886ud8dh+ceenyKkcISLdqXwcnRYpOBCwedVon/wDXlTPHMsg1ix44BQqTp+DJxiwC2+Gn6ezp7fpoXmZzXATsDiTvUUdROmZjJJiAIBFe6fgZb10e8hg4YZhmedIGWOwxcxiZgI+FfNdwKhZ2IpUFRVm1wrGivClyC5+IaV4lfl+je6juINYhsvRBZcVmfBR9ntyKYXdgdhtV47nioVsYudqHrT/1vBYTQGchz7XgFHnnmdGYtariPj4J/V2C0MhE+ayJU1gDx1nVHhh+4EBIByWC8hhEJHFtkiIQleL/z4Becc5po+l4U5vAMiPeB5nNbXSU47SzuB610wx8wjh9RgBJIY9bJQLCL/QSzQGpJuFRPxkV3FzdJ4Rv+COcqzC/dBb0NIwofb1cqQXywRCpV5NZlji0fmvfoqgRjfh2vdtRkJza2OGCuJTR5D3dFM1iRPG6Jt0i3oMSxBHc0Ad83OyUCpCecSD6TFFy7xjAdIhVvY5lOa3JztTWaJPRD+1sbc9N318sAKr12XQhfjApfBDY=
   on:
     branch: master
