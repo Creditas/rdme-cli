@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="rdme_cli",
-    version="0.0.3",
+    version="0.0.4",
     author="Aurelio Saraiva",
     author_email="aurelio.saraiva@creditas.com.br",
     description="Redme.io cli",

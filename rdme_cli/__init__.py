@@ -13,9 +13,9 @@ def update_spec(path, id, ignore_erros=None):
     response = requests.request('PUT', url, auth=(README_API_KEY, 'pass'), files=files)
 
     if(response.status_code == 200):
-        print(response.text)
+        print('Updated successfully')
     else:
-        print(response.text)
+        print('Failure')
 
         if not ignore_erros:
             sys.exit(1)
