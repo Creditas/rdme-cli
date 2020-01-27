@@ -7,7 +7,7 @@ README_API_KEY = os.environ.get('README_API_KEY', None)
 
 
 def update_spec(path, id, ignore_erros=None):
-    url = f'https://dash.readme.io/api/v1/api-specification/{id}'
+    url = "https://dash.readme.io/api/v1/api-specification/%s" % id
     files = {'spec': open(path, 'rb')}
 
     response = requests.request('PUT', url, auth=(README_API_KEY, 'pass'), files=files)

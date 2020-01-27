@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: rdme-cli
-Version: 0.0.1
+Version: 0.0.2
 Summary: Redme.io cli
 Home-page: https://github.com/creditas/rdme-cli
 Author: Aurelio Saraiva
@@ -12,6 +12,10 @@ Description: # rdme-cli
         
         ```bash
         $ pip install rdme-cli
+        ```
+        
+        ```bash
+        $ rdme-cli spec --path ../doc.yml --id 123
         ```
         
 Platform: UNKNOWN
