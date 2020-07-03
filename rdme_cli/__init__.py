@@ -16,6 +16,7 @@ def update_spec(path, id, ignore_erros=None):
         print('Updated successfully')
     else:
         print('Failure')
+        print(response.content)
 
         if not ignore_erros:
             sys.exit(1)
